@@ -1,0 +1,41 @@
+Create table tblNoticias
+(
+   
+id int AUTO_INCREMENT PRIMARY KEY,
+   
+titulo varchar(30) not null,
+   
+texto text,
+  
+excluida bool default false,
+   
+descricao varchar(300),
+   
+imagem varchar(100),
+  
+ dataCadastro timestamp default current_timestamp,
+   
+dataAlteracao timestamp default current_timestamp
+
+);
+
+
+
+Create table tblUsuarios
+(
+ 
+ id int AUTO_INCREMENT PRIMARY KEY,
+  
+nome varchar(100),
+ 
+ usuario varchar(50),
+
+  senha varchar(50)
+
+);
+
+
+
+insert into tblNoticias(titulo, texto) values ('Unimed lança uma nova unidade' , 'A unimed cresce cada vez mais e lança sua nova unidade no bairro Retiro<br>É a unimed cada vez mais perto de você');
+
+insert into tblUsuarios(nome, usuario, senha) values ('jessica', 'jesx', '123barbosa4');
